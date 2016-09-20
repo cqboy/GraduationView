@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuanmeng.cqboy.graduationview.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ll_info_age"
+        android:layout_alignRight="@+id/ll_info_age"
+        android:layout_centerVertical="true">
+
+        <com.yuanmeng.cqboy.graduationview.view.RoundScaleView
+            android:id="@+id/ll_info_weight"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_info_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tv_run_setinfo_height_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="110KG"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <!-- 这儿layout_width值与HorizontalScaleView类的第 60行代码宽度值想关联 -->
+    <com.yuanmeng.cqboy.graduationview.view.HorizontalScaleView
+        android:id="@+id/ll_info_age"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:view_margin="45dip"
+        app:view_max="2010"
+        app:view_min="1930" />
+
+    <!-- 这儿layout_height值与VerticalScaleView类的第 58行代码高度值想关联 -->
+    <com.yuanmeng.cqboy.graduationview.view.VerticalScaleView
+        android:id="@+id/ll_info_height"
+        android:layout_width="70dp"
+        android:layout_height="360dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:view_margin="6dip"
+        app:view_max="230"
+        app:view_min="120" />
+
+</RelativeLayout>

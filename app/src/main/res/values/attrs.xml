@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // 刻度控件自定义属性
+    <declare-styleable name="scale">
+        // 刻度最大值
+        <attr name="view_max" format="integer" />
+        // 刻度最小值
+        <attr name="view_min" format="integer" />
+        // 控件高度
+        <attr name="view_height" format="dimension" />
+        // 刻度间距
+        <attr name="view_margin" format="dimension" />
+    </declare-styleable>
+
+</resources>
