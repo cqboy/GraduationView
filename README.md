@@ -7,4 +7,4 @@
 
 实例img ：
 
-![image](https://github.com/cqboy/GraduationView/blob/master/img/~P%5D)KIAFF%25S3ZKU~D)GF9~O.png)
+![image](https://github.com/cqboy/GraduationView/blob/master/img/img.png)
